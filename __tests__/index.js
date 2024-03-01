@@ -196,7 +196,7 @@ describe('stylelint-config-rational-order/plugin', () => {
   describe('wrong order with disabled plugin', () => {
     it('correct', () => {
       const rules = {
-        [ruleName]: false,
+        [ruleName]: null,
       };
       const wrong = `
         a {
