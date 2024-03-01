@@ -5,6 +5,9 @@
   "author": "Constverum <constverum@gmail.com>",
   "license": "Apache-2.0",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sazuru/stylelint-config-rational-order.git"
