@@ -5,6 +5,7 @@
   "author": "Constverum <constverum@gmail.com>",
   "license": "Apache-2.0",
   "main": "index.js",
+  "private":false,
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
