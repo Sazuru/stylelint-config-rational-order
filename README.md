@@ -58,7 +58,11 @@ Stylelint config that sorts related property declarations by grouping together f
 
 ```bash
 npm install --save-dev stylelint stylelint-order @sazuru/stylelint-config-rational-order
-# or, if you prefer yarn over npm:
+```
+
+##### or, if you prefer yarn over npm:
+
+```bash
 yarn add --dev stylelint stylelint-order @sazuru/stylelint-config-rational-order
 ```
 
@@ -68,7 +72,7 @@ yarn add --dev stylelint stylelint-order @sazuru/stylelint-config-rational-order
 ```javascript
 {
   "extends": [
-    // "stylelint-config-standard",
+    ...(rest of your stylelint config),
     "@sazuru/stylelint-config-rational-order"
   ]
 }
