@@ -1,4 +1,4 @@
-module.exports = [
+const animations = [
   'transition',
   'transition-delay',
   'transition-timing-function',
@@ -14,3 +14,5 @@ module.exports = [
   'animation-direction',
   'animation-fill-mode',
 ];
+
+export default animations;

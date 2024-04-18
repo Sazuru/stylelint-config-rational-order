@@ -1,4 +1,4 @@
-const borderProps = require('./border');
+import borderProps from './border';
 
 const partOne = [
   'display',
@@ -58,4 +58,6 @@ const partOne = [
 
 const partTwo = ['object-fit', 'object-position', 'overflow', 'overflow-x', 'overflow-y'];
 
-module.exports = ({ border }) => [].concat(partOne, border ? borderProps : [], partTwo);
+const boxModel = ({ border }) => [].concat(partOne, border ? borderProps : [], partTwo);
+
+export default boxModel;

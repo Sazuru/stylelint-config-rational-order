@@ -1,4 +1,4 @@
-module.exports = [
+const typography = [
   'color',
   'font',
   'font-weight',
@@ -57,3 +57,5 @@ module.exports = [
   'page-break-inside',
   'src',
 ];
+
+export default typography;

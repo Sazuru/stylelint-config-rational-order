@@ -1,4 +1,4 @@
-module.exports = [
+const border = [
   'border',
   'border-color',
   'border-style',
@@ -33,3 +33,5 @@ module.exports = [
   'border-collapse',
   'border-spacing',
 ];
+
+export default border;

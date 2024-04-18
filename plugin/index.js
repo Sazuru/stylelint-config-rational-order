@@ -1,10 +1,12 @@
-const stylelint = require('stylelint');
-const propertiesOrderRule = require('stylelint-order/rules/properties-order');
-const configCreator = require('../config/configCreator');
+import stylelint from 'stylelint';
 
-const ruleName = 'plugin/rational-order';
+import propertiesOrderRule from 'stylelint-order/rules/properties-order';
 
-module.exports = stylelint.createPlugin(
+import configCreator from '../config/configCreator';
+
+export const ruleName = 'plugin/rational-order';
+
+export default stylelint.createPlugin(
   ruleName,
   (enabled, options, context) => (postcssRoot, postcssResult) => {
     const validOptions = stylelint.utils.validateOptions(
@@ -30,5 +32,3 @@ module.exports = stylelint.createPlugin(
     propertiesOrderRule(expectation, undefined, context)(postcssRoot, postcssResult);
   },
 );
-
-module.exports.ruleName = ruleName;

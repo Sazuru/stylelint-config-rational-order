@@ -1,3 +1,5 @@
-const config = require('./config/extendedStylelintOrderConfig');
+import config from './config/extendedStylelintOrderConfig';
 
-module.exports = config();
+const defaultConfig = config();
+
+export default defaultConfig;

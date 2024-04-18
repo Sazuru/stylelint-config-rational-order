@@ -1,7 +1,12 @@
-const path = require('path');
-const specialProps = require('../groups/special');
+import path from 'path';
 
-module.exports = ({
+import { fileURLToPath } from 'url';
+import specialProps from '../groups/special';
+
+// eslint-disable-next-line no-underscore-dangle
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const extendedConfig = ({
   'border-in-box-model': borderInBoxModel = false,
   'empty-line-between-groups': emptyLineBetweenGroups = false,
 } = {}) => ({
@@ -23,3 +28,5 @@ module.exports = ({
     ],
   },
 });
+
+export default extendedConfig;

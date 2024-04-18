@@ -6,5 +6,9 @@
   },
   "env": {
     "jest/globals": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   }
 }

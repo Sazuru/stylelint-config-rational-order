@@ -1,4 +1,4 @@
-module.exports = [
+const misc = [
   'appearance',
   'content',
   'clip',
@@ -22,3 +22,5 @@ module.exports = [
   'clip-rule',
   'stroke',
 ];
+
+export default misc;

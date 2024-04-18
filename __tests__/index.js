@@ -1,7 +1,11 @@
-const stylelint = require('stylelint');
-const plugin = require('../plugin');
+import stylelint from 'stylelint';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const { ruleName } = plugin;
+import { ruleName } from '../plugin';
+
+// eslint-disable-next-line no-underscore-dangle
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const getExtendedConfig = code => ({
   code,

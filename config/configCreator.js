@@ -1,12 +1,12 @@
-const special = require('../groups/special');
-const positioning = require('../groups/positioning');
-const boxModel = require('../groups/boxModel');
-const typography = require('../groups/typography');
-const visual = require('../groups/visual');
-const animation = require('../groups/animation');
-const misc = require('../groups/misc');
+import special from '../groups/special';
+import positioning from '../groups/positioning';
+import boxModel from '../groups/boxModel';
+import typography from '../groups/typography';
+import visual from '../groups/visual';
+import animation from '../groups/animation';
+import misc from '../groups/misc';
 
-module.exports = ({
+const configCreator = ({
   'border-in-box-model': borderInBoxModel = false,
   'empty-line-between-groups': emptyLineBetweenGroups = false,
 } = {}) =>
@@ -23,3 +23,5 @@ module.exports = ({
     properties,
     groupName,
   }));
+
+export default configCreator;
