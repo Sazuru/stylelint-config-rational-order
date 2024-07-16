@@ -1,8 +1,8 @@
 import stylelint from 'stylelint';
 
-import propertiesOrderRule from 'stylelint-order/rules/properties-order';
+import propertiesOrderRule from 'stylelint-order/rules/properties-order/index.js';
 
-import configCreator from '../config/configCreator';
+import configCreator from '../config/configCreator.js';
 
 export const ruleName = 'plugin/rational-order';
 
